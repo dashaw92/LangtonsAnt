@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<title>Langton's Ant Simulator</title>
+		<meta name="author" content="Daniel Shaw">
+		<meta name="description" content="LAS by Daniel Shaw">
+		<meta name="date" content="October 3rd, 2015">
+		<link href="styles.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<h1>Langton's Ant Simulator</h1>
+		<h2>What is it?</h2>
+		<p><a href="https://en.wikipedia.org/wiki/Langton's_ant">Langton's Ant</a> Simulator (LAS) is a program that simulates the Turing machine, Langton's ant. It was made by Daniel Shaw. It is written in Java.
+		<h2>Usage</h2>
+		<p>You can either run this program as you would normally for the default configuration, or use command line arguments to modify the settings.<br />
+		When using arguments, surround the argument in quotes. For example:<br /><br />
+		<code>$ java -jar Ant.jar "--speed 10"</code><br/><br />
+		All of the arguments and what they do:<br />
+		<table>
+			<tr>
+				<td class="top">Argument</td>
+				<td class="top">Parameters</td>
+				<td class="top">What it does</td>
+			</tr>
+			<tr>
+				<td>-h</td>
+				<td>None</td>
+				<td>Print help</td>
+			</tr>
+			<tr>
+				<td>-v</td>
+				<td>None</td>
+				<td>Display version</td>
+			</tr>
+			
+			<tr>
+				<td>--tile-size</td>
+				<td>&lt;Integer&gt;</td>
+				<td>Set the tile size (must be greater than 8 and less than 32)</td>
+			</tr>
+			<tr>
+				<td>--speed</td>
+				<td>&lt;Integer&gt;</td>
+				<td>Set the speed of the simulation (one iteration every n milliseconds). Has to be greater than 0</td>
+			</tr>
+			<tr>
+				<td>--random</td>
+				<td>None</td>
+				<td>Generate a random grid</td>
+			</tr>
+			<tr>
+				<td>--width</td>
+				<td>&lt;Integer&gt;</td>
+				<td>Set grid width to n, must be greater than 100</td>
+			</tr>
+			<tr>
+				<td>--height</td>
+				<td>&lt;Integer&gt;</td>
+				<td>Set grid height to n, must be greater than 100</td>
+			</tr>
+			<tr>
+				<td>--ants</td>
+				<td>&lt;Integer&gt;</td>
+				<td>Set number of ants</td>
+			</tr>
+		</table>
+		Note: You can press escape at anytime during the simulation to force stop the simulation.
+		<br />
+		Once the simulation has stopped, you can dump the data from the simulation to a file on your desktop.
+		<h2><a href="Ant.jar">Download</a></h2>
+		<h2>Screenshots</h2>
+		<div class="screenshots">
+			<div class="image">
+				<figure>
+					<img src="ss1.png" />
+					<figcaption>Example 1</figcaption>
+				</figure>
+			</div>
+			<div class="image">
+				<figure>
+					<img src="ss2.png" />
+					<figcaption>Example 2</figcaption>
+				</figure>
+			</div>
+			<div class="image">
+				<figure>
+					<img src="sim1.gif" />
+					<figcaption>Animated example</figcaption>
+				</figure>
+			</div>
+			<div class="image">
+				<figure>
+					<img src="sim2.gif" />
+					<figcaption>Running with 10 ants</figcaption>
+				</figure>
+			</div>
+		</div>
+	</body>
+</html>
